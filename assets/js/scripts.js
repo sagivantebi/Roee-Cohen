@@ -109,15 +109,16 @@ document.addEventListener("DOMContentLoaded", function() {
         const mobileSlideshow = document.querySelector('.swiper-container-mobile');
 
         if (isMobile) {
-            webSlideshow.style.display = 'none';
-            mobileSlideshow.style.display = 'block';
+            if (webSlideshow) webSlideshow.style.display = 'none';
+            if (mobileSlideshow) mobileSlideshow.style.display = 'block';
         } else {
-            webSlideshow.style.display = 'block';
-            mobileSlideshow.style.display = 'none';
+            if (webSlideshow) webSlideshow.style.display = 'block';
+            if (mobileSlideshow) mobileSlideshow.style.display = 'none';
         }
     }
 
-    toggleSlideshow(); // Initial check
+    toggleSlideshow(); // Initial check on page load
 
     window.addEventListener('resize', toggleSlideshow); // Adjust on window resize
 });
+
