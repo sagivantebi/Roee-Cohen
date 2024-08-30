@@ -170,7 +170,7 @@ footer {
 
 /* Blur the Swiper images */
 .swiper-slide img {
-    filter: blur(1.2px); /* Apply a blur effect */
+    filter: blur(1.4px); /* Apply a blur effect */
     width: 100%; /* Ensure the images take up full width */
     height: 100%; /* Ensure the images take up full height */
     object-fit: cover; /* Cover the entire slide area */
@@ -266,5 +266,57 @@ footer {
     }
     60% {
         transform: translateY(-5px);
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.contact-section .form-control {
+    border-radius: 0.25rem;
+}
+
+.contact-section .btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Default to show web slideshow and hide mobile slideshow */
+.swiper-container-web {
+    display: block;
+}
+
+.swiper-container-mobile {
+    display: none;
+}
+
+/* Show mobile slideshow on screens less than 768px */
+@media (max-width: 768px) {
+    .swiper-container-mobile .swiper-slide img {
+        object-position: 75% 85%; /* Shift focus 60% to the right and keep it centered vertically */
+    }
+    .swiper-container-web {
+        display: none;
+    }
+
+    .swiper-container-mobile {
+        display: block;
     }
 }
