@@ -197,6 +197,17 @@ footer {
     width: 100%; /* Ensure the images take up full width */
     height: 100%; /* Ensure the images take up full height */
     object-fit: cover; /* Cover the entire slide area */
+    
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .swiper-slide img {
+        height: 100vh; /* Make the image height fill the entire viewport height */
+        object-fit: cover; /* Ensure the image covers the slide area */
+        object-position: 100% 100%; /* Focus on the right bottom quarter */
+
+    }
 }
 
 /* Overlay content */
