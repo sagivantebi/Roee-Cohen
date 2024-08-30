@@ -34,3 +34,9 @@ document.querySelectorAll('.social-icon').forEach(icon => {
         icon.style.opacity = '1';
     });
 });
+// Smooth scroll to the next section when the scroll-down button is clicked
+document.querySelector('.scroll-down-button').addEventListener('click', function() {
+    document.querySelector('#works').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
