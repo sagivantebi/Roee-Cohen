@@ -205,7 +205,7 @@ footer {
     .swiper-slide img {
         height: 100vh; /* Make the image height fill the entire viewport height */
         object-fit: cover; /* Ensure the image covers the slide area */
-        object-position: 100% 100%; /* Focus on the right bottom quarter */
+        object-position: 85% 100%; /* Focus on the right bottom quarter */
 
     }
 }
