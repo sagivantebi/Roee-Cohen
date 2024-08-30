@@ -337,27 +337,6 @@ footer {
     display: block;
 }
 
-.swiper-container-mobile {
-    display: none;
-}
-
-/* Show mobile slideshow on screens less than 768px */
-@media (max-width: 768px) {
-    .swiper-container-mobile .swiper-slide img {
-        object-position: 75% 95%; /* Shift focus 60% to the right and keep it centered vertically */
-    }
-    .swiper-container-web {
-        display: none;
-    }
-    .swiper-container-mobile .swiper-button-next,
-    .swiper-container-mobile .swiper-button-prev {
-        display: none; /* Hide the arrows */
-    }
-
-    .swiper-container-mobile {
-        display: block;
-    }
-}
 
 /* Fade-in effect */
 .fade-in {
