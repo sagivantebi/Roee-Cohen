@@ -102,4 +102,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    function toggleSlideshow() {
+        const isMobile = window.innerWidth <= 768;
+        const webSlideshow = document.querySelector('.swiper-container-web');
+        const mobileSlideshow = document.querySelector('.swiper-container-mobile');
+
+        if (isMobile) {
+            if (webSlideshow) webSlideshow.style.display = 'none';
+            if (mobileSlideshow) mobileSlideshow.style.display = 'block';
+        } else {
+            if (webSlideshow) webSlideshow.style.display = 'block';
+            if (mobileSlideshow) mobileSlideshow.style.display = 'none';
+        }
+    }
+
+    toggleSlideshow(); // Initial check on page load
+
+    window.addEventListener('resize', toggleSlideshow); // Adjust on window resize
+});
 
