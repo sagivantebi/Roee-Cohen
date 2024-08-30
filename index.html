@@ -1,520 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagiv Antebi | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Sagiv Antebi | Portfolio" />
-    <meta property="og:description" content="Explore the portfolio of Sagiv Antebi, a Machine Learning Researcher specializing in Large Language Models (LLMs) and Software Development." />
-    <meta property="og:image" content="https://sagivantebi.github.io/Sagiv-Website/assets/images/5_without_background.jpeg" />
-    <meta property="og:url" content="https://sagivantebi.github.io/Sagiv-Website/" />
-    <meta property="og:type" content="website" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roee Cohen | Music Producer</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-</head>
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Roee Cohen | Music Producer" />
+        <meta property="og:description" content="Explore the portfolio of Roee Cohen, a talented music producer. Listen to his latest tracks and watch his creative music videos." />
+        <meta property="og:image" content="https://yourwebsite.com/assets/images/logo.png" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:type" content="website" />
+    </head>
 <body>
-    <!-- Professional Header with Bootstrap -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#home">Sagiv Antebi</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/watch?v=uHgt8giw1LY" target="_blank">Merch</a>
-                        </li>
-                    </ul>
+    <!-- Hero Section with Slideshow -->
+    <header id="hero" class="hero-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/slides_pic1.jpg" alt="Slide 1" style="width:100%">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/slides_pic2.jpg" alt="Slide 2" style="width:100%">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/slides_pic3.jpg" alt="Slide 3" style="width:100%">
                 </div>
             </div>
-        </nav>
+            
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Overlay Content -->
+            <div class="swiper-overlay">
+                <h1 class="main-title">ROEE COHEN</h1>
+                <h2 class="subtitle">Music Producer</h2>
+            </div>
+        </div>
+        
     </header>
-    
 
-    <!-- Home Section -->
-    <section id="home" class="home-intro">
-        <div class="about-container">
-            <div class="profile-pic-container">
-                <img src="assets/images/5_without_background.jpeg" alt="Sagiv Antebi" class="profile-pic">
-            </div>
-            <div class="about-text">
-                <!-- Personalized Intro Section -->
-                <div class="intro">
-                    <div class="intro-point fade-in">
-                        <h1 class="intro-title">Hi, I'm Sagiv!</h1>
-                        <h2 class="intro-subtitle">A Machine Learning Researcher specializing in Large Language Models</h2>
+    <!-- Works Section -->
+    <section id="works" class="works-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work-card">
+                        <iframe src="https://www.youtube.com/embed/d_aqe4grayY" frameborder="0" allowfullscreen></iframe>
+                        <h3>Track Title 1</h3>
+                        <p>Short description of the track or video.</p>
                     </div>
                 </div>
-                
-                <!-- Degree Section with Logos and Improved Design -->
-                <div class="degrees">
-                    <div class="degree fade-in">
-                        <div class="intro-point fade-in">
-                            <h2 class="intro-subtitle">And a Software Developer</h2>
-                            <img src="assets/images/3_2_without_background.jpeg" alt="Bar Ilan University" class="degree-logo centered-logo big_photo">
-                        </div>
+                <div class="col-md-4">
+                    <div class="work-card">
+                        <iframe src="https://www.youtube.com/embed/vpRkAoCqX3o" frameborder="0" allowfullscreen></iframe>
+                        <h3>Track Title 2</h3>
+                        <p>Short description of the track or video.</p>
                     </div>
-
-                    <div class="degree fade-in">
-                        <div class="degree-content">
-                            <p class="degree-title">M.Sc. Student in Software and Information Systems Engineering</p>
-                            <img src="assets/images/ben_gurion_logo.png" alt="Bar Ilan University" class="degree-logo centered-logo">
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-card">
+                        <iframe src="https://www.youtube.com/embed/videoID3" frameborder="0" allowfullscreen></iframe>
+                        <h3>Track Title 3</h3>
+                        <p>Short description of the track or video.</p>
                     </div>
-                    <div class="degree fade-in">
-                        <div class="degree-content">
-                            <p class="degree-title">B.Sc. in Computer Science</p>
-                            <img src="assets/images/bar_ilan_logo.png" alt="Bar Ilan University" class="degree-logo centered-logo">
-                        </div>
-                    </div>
-                    
-                    
                 </div>
-            
-            
-                <!-- Bio Section -->
-                <!-- <div class="intro-point">
-                    <p class="significant-text text-left">
-                        As a passionate Machine Learning Researcher, I combine programming skills with practical experience with Large Language Models, ethical white hat attacks against ML, and AI optimization.
-                        My expertise is showcased through a diverse array of projects in the fields of AI, communication, cybersecurity, and human-robot interaction.</p>
-                </div> -->
-                <!-- Skills Section -->
-                 
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <ul class="skills-list">
-                        <li><span class="skill-headline  fade-in">🤖 Ai Technologies:</span> Large Language Models (LLMs), RAG, classic NLP, Diffusion Models, TTS, STT, TensorFlow, PyTorch</li>
-                        <li><span class="skill-headline  fade-in">💻 Programming Languages:</span> Python, C++, C, Java, C#, Assembly</li>
-                        <li><span class="skill-headline fade-in">🌐 Web Development:</span> HTML, CSS, JavaScript, React, SQL, XML, ASP.NET, MongoDB</li>
-                        <li><span class="skill-headline fade-in">🛠️ Operating Systems & Tools:</span> Linux, Windows, Android, Bash, Git, Wireshark, Postman</li>
-                    </ul>
-                </div>
-                
-                <!-- Links Section -->
-                <div class="links">
-                    <a href="https://github.com/sagivantebi" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
-                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.071 1.531 1.03 1.531 1.03.892 1.528 2.341 1.086 2.91.83.092-.647.35-1.086.636-1.335-2.221-.252-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.685-.103-.253-.447-1.27.097-2.646 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.851.004 1.705.115 2.504.337 1.909-1.295 2.748-1.026 2.748-1.026.545 1.376.202 2.393.1 2.646.64.698 1.028 1.592 1.028 2.685 0 3.849-2.338 4.696-4.565 4.943.36.309.682.92.682 1.854 0 1.336-.012 2.415-.012 2.743 0 .268.18.578.688.48A9.994 9.994 0 0022 12c0-5.523-4.477-10-10-10z"></path>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sagiv-antebi/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
-                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                        </svg>
-                    </a>
-                </div>
-                             
+                <!-- Add more work cards as needed -->
             </div>
         </div>
     </section>
-    
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="project-heading-container fade-in">
-            <h2 class="project-title">My Projects</h2>
+    <!-- Social Links Section -->
+    <section id="social" class="social-section">
+        <div class="container text-center">
+            <h2>Follow Roee Cohen</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/roee_cohen" target="_blank">
+                    <img src="assets/images/instagram-logo.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://music.apple.com/artist/roee-cohen/id123456789" target="_blank">
+                    <img src="assets/images/apple-music-logo.png" alt="Apple Music" class="social-icon">
+                </a>
+                <a href="https://open.spotify.com/artist/roee-cohen" target="_blank">
+                    <img src="assets/images/spotify-logo.png" alt="Spotify" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UC123456789RoeeCohen" target="_blank">
+                    <img src="assets/images/youtube-logo.png" alt="YouTube" class="social-icon">
+                </a>
+            </div>
         </div>
-        <div class="project-filters">
-            <!-- <button class="pill-btn" data-category="all">All</button> -->
-            <button class="pill-btn" data-category="ai">Ai</button>
-            <button class="pill-btn" data-category="cyber">Cyber</button>
-            <button class="pill-btn" data-category="bots">Bots</button>
-            <button class="pill-btn" data-category="applications">Apps</button>
-        </div>
-
-
-
-        <div class="project-grid">
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/tag_tab_coming_soon.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Tag&Tab - Efficient and Effective Detection of Pretraining Data from Large Language Models</h3>
-                    <p>Novel method for detecting pretraining data from Large Language Models (LLMs)</p>
-                    <!-- <a href="https://github.com/sagivantebi/Deep_Reinforcement_Learning-Final_Drill" target="_blank" class="project-link"> -->
-                        <!-- <i class="fab fa-github"></i> View on GitHub -->
-                    <!-- </a> -->
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/gpt-sheep.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>GPT in Sheep’s Clothing: The Risk of Customized GPTs</h3>
-                    <p>Exploring the risks associated with custom GPTs, particularly in terms of privacy and security threats.</p>
-                    <a href="https://arxiv.org/abs/2401.09075" target="_blank" class="project-link">
-                        <i class="fab fa-arxiv"></i> View on arXiv
-                    </a>
-                </br>
-                    <a href="https://anonymous.4open.science/r/GPT-in-sheep-s-clothing-The-risk-of-customized-GPTs-8C61/README.md" target="_blank" class="project-link">                        
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-
-                    <img src="assets/images/gpt-sheep-2.jpg" alt="Project Icon" class="project-icon">
-                </div>
-            </div>
-
-
-
-            <!-- DaliDoodle Paint With Me Bot -->
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/dd.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>DaliDoodle - Paint With Me Chat Bot</h3>
-                    <img src="assets/images/dd1.png" alt="Project Icon" class="project-icon">
-
-                    <p>Creating a Painting Description together using LLMs and afterward Painting it using Text to Image model.</p>
-                    <a href="https://github.com/sagivantebi/DaliDoodle_Paint_With_Me_Bot-Python" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <video controls class="project-video">
-                        <source src="assets/videos/dalidoodle vid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <img src="assets/images/dd_flow.png" alt="Project Icon" class="project-icon">
-                </div>
-            </div>
-
-
-            <!-- Merom Vocal Waiting Time Assistant -->
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/m3.jpeg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Merom - GPT-Powered Virtual Customer Service Agent</h3>
-                    <p>Merom is a cutting-edge virtual customer service agent designed to seamlessly blend AI efficiency with a human touch, addressing common customer service issues in a cost-effective and efficient manner.</p>
-                    <a href="https://github.com/sagivantebi/Merom-Vocal_Waiting_Time_Assistant-Python" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <img src="assets/images/m2.jpg" alt="Project Icon" class="project-icon">
-                    <img src="assets/images/m4.jpeg" alt="Project Icon" class="project-icon">
-
-                </div>
-            </div>
-
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/side_channel0.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Side Channel attack on LLMs</h3>
-                    <p>Topic Inference through LLM Side Channels: Analyzing Model Response Times on Encrypted Traffic</p>
-                    <a href="https://github.com/sagivantebi/Topic-Inference/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <img src="assets/images/side_channel3.jpg" alt="Project Icon" class="project-icon">
-                    <img src="assets/images/side_cannel2.jpg" alt="Project Icon" class="project-icon">
-                    <img src="assets/images/side_channel4.jpg" alt="Project Icon" class="project-icon">
-                </div>
-            </div>
-
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/hotel_without_background.jpeg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Search Engine API Calls Optimization using AI-Based Cache System</h3>
-                    <p>Optimizing search engine API calls for hotel prices by using an AI-based caching system to reduce API usage and maximize cost savings.</p>
-                    <a href="https://github.com/sagivantebi/AI-Based-Cache-System-for-Optimizing-Hotel-Price-API-Calls/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <!-- <img src="assets/images/hotel_Figure_1.png" alt="Project Icon" class="project-icon"> -->
-
-                </div>
-            </div>
-            
-
-            <!-- Prompt Injection Detectors for LLMs -->
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/detector_without_background.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Prompt Injection Detectors for LLMs</h3>
-                    <p>This project focuses on developing and evaluating various prompt injection detectors to safeguard large language models (LLMs) from adversarial inputs. The project includes multiple approaches, such as rule-based and perplexity-based detectors.</p>
-                    <a href="https://github.com/sagivantebi/Prompt-injection-detectors-for-LLMs?tab=readme-ov-file" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <img src="assets/images/detector_results.png" alt="Project Icon" class="project-icon">
-
-                </div>
-            </div>
-            
-            <!-- <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/drl.gif" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Deep Reinforcement Learning - Transfer Learning</h3>
-                    <p>Actor-Critic with Transfer Learning for Control Problems</p>
-                    <a href="https://github.com/sagivantebi/Deep_Reinforcement_Learning-Final_Drill" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <img src="assets/images/drl2.jpg" alt="Project Icon" class="project-icon">
-                </div>
-            </div> -->
-
-
-
-
-            <!-- Face Recognition Project -->
-            <div class="project-card fade-in" data-category="ai">
-                <img src="assets/images/facere.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Face Recognition System</h3>
-                    <p>This project implements a face recognition system using deep learning techniques. It is designed to accurately identify and verify individuals in real-time, making it suitable for security and access control applications.</p>
-                    <a href="https://github.com/sagivantebi/Face_Recognition" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-
-
-            
-            <div class="project-card fade-in" data-category="cyber">
-                <img src="assets/images/ransom.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Dataset Ransomware Detection Tool</h3>
-                    <p>This tool detects the exact snapshot of an encrypted file by using multiple tests, such as entropy and ASCII checks, to determine if a file is encrypted.</p>
-                    <a href="https://github.com/sagivantebi/Ransomware_Detection_Toga_Hackathon" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <img src="assets/images/ransom2.jpg" alt="Project Icon" class="project-icon">
-                </div>
-            </div>
-
-                        
-
-            
-            <div class="project-card fade-in" data-category="cyber">
-                <img src="assets/images/annomalydetector.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Anomaly Detector - C++</h3>
-                    <p>This C++ project implements an anomaly detection system for time series data using various algorithms, with a CLI for user interaction.</p>
-                    <a href="https://github.com/sagivantebi/Anomaly_Detector-Cpp" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" data-category="cyber">
-                <img src="assets/images/Dnsspoof.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>DNS Spoofing</h3>
-                    <p>This script intercepts DNS requests on a specified network interface and sends forged DNS responses, using Scapy to manipulate and inject packets.</p>
-                    <a href="https://github.com/sagivantebi/DNS_Spoofing/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="project-card fade-in" data-category="cyber">
-                <img src="assets/images/merkle.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Merkle Tree</h3>
-                    <p>This Python project implements a Merkle Tree structure with the ability to generate cryptographic proofs and verify them using RSA keys.</p>
-                    <a href="https://github.com/sagivantebi/Merkle_Tree" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/3_without_background.jpeg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>My Portfolio Website</h3>
-                    <p>This project is my personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, and professional background. The website includes interactive features such as a project filter, a smooth scrolling effect, and a dynamic layout that adapts to different screen sizes. It also integrates GitHub and LinkedIn icons for easy access to my profiles and uses Bootstrap for modern design elements.</p>
-                    <a href="https://github.com/sagivantebi/Sagiv-Website" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <!-- <video controls class="project-video">
-                        <source src="assets/videos/cloud.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> -->
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/cloud.jpeg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Cloud Simulator</h3>
-                    <p>This project simulates a basic cloud environment using Python. The project consists of a server and client component, enabling the simulation of client-server interactions in a cloud environment. This simulation could be used for educational purposes or as a foundation for more complex cloud-based applications.</p>
-                    <a href="https://github.com/sagivantebi/Cloud_Simulator-Python" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <video controls class="project-video">
-                        <source src="assets/videos/cloud.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-
-            <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/arknoid.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Arkanoid Game</h3>
-                    <p>This project is a Java implementation of the classic Arkanoid game. The game involves controlling a paddle to bounce a ball and break blocks arranged in patterns. This project includes multiple levels, animations, and a scoring system.</p>
-                    <a href="https://github.com/sagivantebi/ArkanoidGame-Java/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <video controls class="project-video">
-                        <source src="assets/videos/arkanoid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-
-                        
-            <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/android2.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Chat App – Android</h3>
-                    <p>Android chat application that allows users to send and receive messages in real time. Firebase Integration: Leverage Firebase services for authentication, real-time database, and cloud messaging.</p>
-                    <a href="https://github.com/sagivantebi/Android_Chat/tree/master" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <video controls class="project-video">
-                        <source src="assets/videos/andriod.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            
-            <!-- <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/PRODUCER-CONSUMER.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Producer-Consumer Problem Implementation</h3>
-                    <p>This project implements the classic Producer-Consumer problem in C++. The implementation includes both bounded and unbounded queues for managing the produced and consumed items.</p>
-                    <a href="https://github.com/sagivantebi/OS_Producer_Consumer/tree/master" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div> -->
-            
-            <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/split1.png" alt="Project Icon" class="project-icon">
-                <img src="assets/images/split2.png" alt="Project Icon" class="project-icon">
-
-                <div class="project-info">
-                    <h3>Split The Check - UX UI</h3>
-                    <p>This document provides a summary of the final presentation for the "Split The Check" UX UI project, which focuses on an application designed to simplify the process of splitting bills among participants in a restaurant or similar setting.</p>
-                    <a href="https://github.com/sagivantebi/SplitTheCheck-UX/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" data-category="bots">
-                <img src="assets/images/youtube_bot.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>YouTube Playlist Downloader Bot</h3>
-                    <p>This Python bot automates the process of downloading videos from a YouTube playlist by using a third-party online converter with Selenium.</p>
-                    <a href="https://github.com/sagivantebi/Youtube_Playlist_Downloader_Bot-Python/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <video controls class="project-video">
-                        <source src="assets/videos/youtube.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" data-category="bots">
-                <img src="assets/images/colonist.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Colonist.io C&K Bot</h3>
-                    <p>This Python bot automates actions on the Colonist.io website for the "Cities & Knights" game mode, using Selenium for navigation and interaction.</p>
-                    <a href="https://github.com/sagivantebi/Colonist_Bot-CitiesAndKnights/tree/master" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <video controls class="project-video">
-                        <source src="assets/videos/colonist.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" data-category="bots">
-                <img src="assets/images/webcrawler.png" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Web Crawler</h3>
-                    <p>This Python project scrapes the top 250 movies from IMDB and crawls through websites to find URLs that match specific criteria with robust error handling.</p>
-                    <a href="https://github.com/sagivantebi/Web_Crawler-Python" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            
-            <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/designpatterns.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Design Patterns - C++</h3>
-                    <p>This project demonstrates the implementation of various software design patterns using C++. Design patterns are reusable solutions to common software design problems, and this project includes examples of some of the most widely used patterns.</p>
-                    <a href="https://github.com/sagivantebi/Design_Patterns-Cpp/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            
-            <!-- <div class="project-card fade-in" data-category="applications">
-                <img src="assets/images/mini_shell.jpg" alt="Project Icon" class="project-icon">
-                <div class="project-info">
-                    <h3>Custom Shell Program – C</h3>
-                    <p>This C program implements a simple custom shell that can execute commands, manage a history of commands, and handle basic shell operations such as changing directories (cd), exiting, and forking processes.</p>
-                    <a href="https://github.com/sagivantebi/mini_Shell-C/tree/main" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-             -->
-            
-        </div>
-        <div class="project-filters">
-            <!-- <button class="pill-btn" data-category="all">All</button> -->
-            <button class="pill-btn" data-category="ai">Ai</button>
-            <button class="pill-btn" data-category="cyber">Cyber</button>
-            <button class="pill-btn" data-category="bots">Bots</button>
-            <button class="pill-btn" data-category="applications">Apps</button>
-        </div>
-
     </section>
-    <img src="assets/images/1_without_background.jpeg" alt="final Icon" class="final-icon">
-
-    <!-- Another Round Button -->
-    <div class="another-round-container">
-        <button class="another-round-btn" onclick="scrollToTop()">Another Round!</button>
-    </div>
 
     <footer>
-        <div class="links">
-            <a href="https://github.com/sagivantebi" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.071 1.531 1.03 1.531 1.03.892 1.528 2.341 1.086 2.91.83.092-.647.35-1.086.636-1.335-2.221-.252-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.685-.103-.253-.447-1.27.097-2.646 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.851.004 1.705.115 2.504.337 1.909-1.295 2.748-1.026 2.748-1.026.545 1.376.202 2.393.1 2.646.64.698 1.028 1.592 1.028 2.685 0 3.849-2.338 4.696-4.565 4.943.36.309.682.92.682 1.854 0 1.336-.012 2.415-.012 2.743 0 .268.18.578.688.48A9.994 9.994 0 0022 12c0-5.523-4.477-10-10-10z"></path>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/sagiv-antebi/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
-                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                </svg>
-            </a>
-        </div>
-
-        <p>&copy; 2024 Sagiv Antebi</p>
+        <p>&copy; 2024 Roee Cohen. All rights reserved.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
