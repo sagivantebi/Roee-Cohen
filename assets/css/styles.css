@@ -105,29 +105,52 @@ body {
     text-align: center;
 }
 
-.social-section h2 {
-    font-size: 2.5rem;
-    color: #f8f9fa;
-    margin-bottom: 30px;
-}
-
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 20px 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;
+    gap: 10px; /* Adjust gap between icons */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .social-icon {
     width: 60px;
     height: 60px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    flex-shrink: 0; /* Prevent icons from shrinking */
 }
 
 .social-icon:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Adjust the social links to be in a row on mobile screens */
+@media (max-width: 480px) {
+    .social-links {
+        flex-direction: row; /* Ensure the icons are in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: space-around; /* Space the icons evenly */
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    .social-icon {
+        width: 30px; /* Adjust size for better fit */
+        height: 30px;
+    }
+}
+
+
+
+
 
 /* Footer */
 footer {
@@ -170,7 +193,7 @@ footer {
 
 /* Blur the Swiper images */
 .swiper-slide img {
-    filter: blur(1.4px); /* Apply a blur effect */
+    filter: blur(5.8px); /* Apply a blur effect */
     width: 100%; /* Ensure the images take up full width */
     height: 100%; /* Ensure the images take up full height */
     object-fit: cover; /* Cover the entire slide area */
@@ -189,19 +212,30 @@ footer {
 
 /* Main title style */
 .main-title {
-    font-size: 6rem; /* Increase the size of the main title */
+    font-size: 6rem; /* Large font size for emphasis */
     font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better contrast */
+    text-shadow: 8px 8px 20px rgba(0, 0, 0, 0.8), /* Strong shadow for depth */
+                 2px 2px 10px rgba(255, 255, 255, 0.2), /* Soft glow effect */
+                 4px 4px 10px rgba(0, 0, 0, 0.5); /* Additional subtle shadow */
+    color: #f8f9fa; /* Light text color to contrast with shadows */
     margin-bottom: 30px;
+    letter-spacing: 1px; /* Slight letter spacing for a modern look */
+    white-space: nowrap; /* Prevents text wrapping */
+
 }
 
 /* Subtitle style */
 .subtitle {
-    font-size: 3rem; /* Increase the size of the subtitles */
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-size: 3.5rem; /* Slightly larger subtitle for emphasis */
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8), /* Deeper shadow for more depth */
+                 1px 1px 5px rgba(255, 255, 255, 0.2), /* Soft glow effect */
+                 2px 2px 5px rgba(0, 0, 0, 0.5); /* Additional subtle shadow */
+    color: #f8f9fa; /* Match main title for consistency */
     font-weight: 300;
+    letter-spacing: 0.5px; /* Slight letter spacing */
 }
+
 
 /* Swiper button customization */
 .swiper-button-next, .swiper-button-prev {
@@ -310,13 +344,58 @@ footer {
 /* Show mobile slideshow on screens less than 768px */
 @media (max-width: 768px) {
     .swiper-container-mobile .swiper-slide img {
-        object-position: 75% 85%; /* Shift focus 60% to the right and keep it centered vertically */
+        object-position: 75% 95%; /* Shift focus 60% to the right and keep it centered vertically */
     }
     .swiper-container-web {
         display: none;
     }
+    .swiper-container-mobile .swiper-button-next,
+    .swiper-container-mobile .swiper-button-prev {
+        display: none; /* Hide the arrows */
+    }
 
     .swiper-container-mobile {
         display: block;
+    }
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward movement */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0); /* Return to original position */
+}
+
+
+/* For web version (larger screens) */
+@media (min-width: 769px) {
+    .works-section .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .works-section .col-md-4 {
+        flex: 0 0 50%; /* Two columns per row with spacing */
+        max-width: 50%; /* Ensure they don't exceed the row width */
+        margin-bottom: 20px;
+    }
+}
+
+/* For smaller screens, fallback to one video per row */
+@media (max-width: 768px) {
+    .works-section .row {
+        display: block; /* Stack videos in one column */
+    }
+
+    .works-section .col-md-4 {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure full width */
+        margin-bottom: 20px; /* Space between rows */
     }
 }
