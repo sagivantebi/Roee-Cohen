@@ -302,21 +302,21 @@ footer {
                  2px 2px 10px rgba(255, 255, 255, 0.2), /* Soft glow effect */
                  4px 4px 10px rgba(0, 0, 0, 0.5); /* Additional subtle shadow */
     color: #f8f9fa; /* Light text color to contrast with shadows */
-    margin-bottom: 30px;
     letter-spacing: 1px; /* Slight letter spacing for a modern look */
     white-space: nowrap; /* Prevents text wrapping */
 
 }
 
-/* Subtitle style */
+/* Updated Subtitle Style */
 .subtitle {
-    font-size: 3.5rem; /* Slightly larger subtitle for emphasis */
-    margin-bottom: 20px;
+    font-size: 4rem; /* Increase font size */
+    margin-top: 1px; /* Reduce the gap above the subtitle */
+    margin-bottom: 50px; /* Add some space below the subtitle */
     text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8), /* Deeper shadow for more depth */
                  1px 1px 5px rgba(255, 255, 255, 0.2), /* Soft glow effect */
                  2px 2px 5px rgba(0, 0, 0, 0.5); /* Additional subtle shadow */
     color: #f8f9fa; /* Match main title for consistency */
-    font-weight: 300;
+    font-weight: 500; /* Make it bolder */
     letter-spacing: 0.5px; /* Slight letter spacing */
 }
 
@@ -467,3 +467,28 @@ footer {
     text-align: right;
 }
 
+/* Hebrew Text Style */
+.hebrew-text {
+    font-size: 2.5rem; /* Base font size */
+    color: #f8f9fa; /* Match text color with other headings */
+    margin-top: 5px; /* Increase the gap above the Hebrew text */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8), /* Similar shadow effect */
+                 1px 1px 5px rgba(255, 255, 255, 0.2),
+                 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+    font-weight: 400; /* Slightly bolder */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Responsive Adjustment for Mobile */
+@media (max-width: 768px) {
+    .hebrew-text {
+        font-size: 1.5rem; /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .hebrew-text {
+        font-size: 1rem; /* Smaller font size for mobile screens */
+    }
+}
