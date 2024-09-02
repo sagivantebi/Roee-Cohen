@@ -138,9 +138,9 @@ body {
     transform: translateX(-50%) rotate(180deg); /* Rotate the arrow 180 degrees */
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 25px solid #282828; /* Same color as the div background */
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #282828; /* Same color as the div background */
     z-index: 1;
 }
 
@@ -435,13 +435,40 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(20px); /* Optional: Add a slight upward movement */
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
 .fade-in.show {
     opacity: 1;
     transform: translateY(0); /* Return to original position */
 }
+
+/* Fade-in effect with delays for sequential appearance */
+.fade-in-first {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-second {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    transition-delay: 1s; /* Delay the appearance of the second heading */
+}
+
+.fade-in-third {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    transition-delay: 2s; /* Delay the appearance of the third heading */
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 /* For web version (larger screens) */
