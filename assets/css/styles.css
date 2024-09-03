@@ -61,7 +61,7 @@ body {
 
 /* Works Section */
 .works-section {
-    padding: 50px 0;
+    padding: 60px 0;
     background-color: #212529;
 }
 
@@ -102,7 +102,7 @@ body {
 .social-section {
     padding: 0; /* Remove padding from the section */
     background-color: #212529; /* Dark background outside the main container */
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 0px 100px #212529; /* Ensures no white background underneath */
 }
 
@@ -645,3 +645,18 @@ footer {
     }
 }
 
+/* Change the color of the dots */
+.slick-dots li button:before {
+    content: "•"; /* Use dot character */
+    font-family: "Arial", sans-serif; /* Ensure compatibility */
+    color: white !important; /* Force the color to be white */
+    opacity: 0.75; /* Slightly transparent dots */
+    font-size: 12px; /* Adjust the size of the dots */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Change the color of the active dot */
+.slick-dots li.slick-active button:before {
+    opacity: 1; /* Make the active dot fully opaque */
+    color: white !important; /* Ensure the active dot is also white */
+}
