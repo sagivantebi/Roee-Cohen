@@ -660,3 +660,70 @@ footer {
     opacity: 1; /* Make the active dot fully opaque */
     color: white !important; /* Ensure the active dot is also white */
 }
+/* Floating WhatsApp Icon */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px; /* Adjust the distance from the bottom */
+    right: 30px; /* Adjust the distance from the right */
+    z-index: 1000; /* Ensure it appears above everything */
+    width: 100px; /* Default size for larger screens */
+    height: 100px; /* Default size for larger screens */
+    border-radius: 50%;
+    background-color: #25d366; /* WhatsApp green background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: bounce 3s infinite;
+    transition: transform 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1); /* Scale up the icon slightly on hover */
+}
+
+.floating-whatsapp img.whatsapp-icon {
+    width: 90%; /* Increase the size of the icon inside the container */
+    height: 90%; /* Ensure the icon takes up more space within the circle */
+    border-radius: 50%;
+
+    display: block;
+    margin: 0 auto; /* Center the icon */
+    object-fit: contain; /* Ensure the icon scales properly inside the container */
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2)); /* Adds a shadow to make the icon look cute */
+}
+
+/* Animation for bouncing effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Media query for smaller screens (tablets and below) */
+@media (max-width: 768px) {
+    .floating-whatsapp {
+        width: 80px; /* Decrease the size for tablets and smaller screens */
+        height: 80px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .floating-whatsapp {
+        width: 50px; /* Further decrease the size for mobile phones */
+        height: 50px;
+    }
+
+    .floating-whatsapp img.whatsapp-icon {
+        width: 60%; /* Adjust the icon size for mobile */
+        height: 60%;
+    }
+}
